@@ -61,7 +61,7 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
-					<imageName>todolist-config-service</imageName>
+					<imageName>todolist-eureka-service-discovery</imageName>
 					<baseImage>openjdk:17</baseImage>
 					<entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
 					<!-- copy the service's jar file from target into the root directory of the image --> 
