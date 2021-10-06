@@ -4,6 +4,10 @@ spring:
       server:
         git:
           uri: https://github.com/ahmed-ramsey-shahin/TodoList/
+          search-paths:
+          - configuration/userservice
+          - configuration/todoservice
+          - configuration/service-discovery
           timeout: 5
           clone-on-start: true
           default-label: main
