@@ -7,7 +7,7 @@ spring:
           search-paths:
           - configuration/userservice
           - configuration/todoservice
-          - configuration/service-discovery
+          - configuration/discoveryservice
           timeout: 5
           clone-on-start: true
           default-label: main
