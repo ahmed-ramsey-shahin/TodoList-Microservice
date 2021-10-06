@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: userservice
+  profiles:
+    active:
+    - default
+  cloud:
+    config:
+      uri:
+      - http://localhost:5000/
