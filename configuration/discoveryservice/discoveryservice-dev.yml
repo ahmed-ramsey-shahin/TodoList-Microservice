@@ -1,0 +1,3 @@
+eureka:
+  server:
+    wait-time-in-ms-when-sync-empty: 5
