@@ -1,6 +1,4 @@
 spring:
-  jpa:
-    generate-ddl: true
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5002/todolist
@@ -8,6 +6,7 @@ spring:
     password: "{cipher}658ef8d8acfb4ec21a5c34e84a3317babd96d116e778ce8b2d545612768aed56"
   jpa:
     show-sql: true
+    generate-ddl: true
   application:
     name: userservice
 eureka:
