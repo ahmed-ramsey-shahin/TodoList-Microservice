@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: listservice
+  profiles:
+    active:
+    - default
+  cloud:
+    config:
+      uri:
+      - http://todolist-config-service:8080/
