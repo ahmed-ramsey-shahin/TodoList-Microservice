@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5002/todolist
+    url: jdbc:postgresql://todolist-postgres-database:5432/todolist
     username: "{cipher}96191a1f11ecba36e24451bd833d0a96679ed35f69797b97edc414343f689132"
     password: "{cipher}f9ca2efe9b4bfce9cb59110bb5f40fd73746349cce951617f1a294239f0e7a6d"
   jpa:
@@ -14,7 +14,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: ${EUREKA_URI:http://localhost:5001/eureka}
+      defaultZone: ${EUREKA_URI:http://todolist-discovery-service:8761/eureka}
     fetch-registry: true
     register-with-eureka: true
 management:
