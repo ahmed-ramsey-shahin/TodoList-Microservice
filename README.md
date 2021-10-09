@@ -12,10 +12,12 @@ ENTRYPOINT ["java", "-jar", "jarfilename.jar"]
 ```
 First of all the JDK image should be version 17 or later, the port should be similar to the port used in the micro service, and last things last the ENCRYPT_KEY environment variable should contain an encryption key which the application will use to encrypt, or decrypt private fields in the configuration files (You can remove it and keep the configuration without encryption, but it is recommended that you encrypt any sensitive data).
 #### Default port for each micro service
-microservice|Port
+application|Port
 ------------|----
 discovery service|8761
 config service|8080
-user service|9090
-todo service|7070
+user service|8080
+list service|8080
+todo service|8080
+postgres database|5432
 ***
