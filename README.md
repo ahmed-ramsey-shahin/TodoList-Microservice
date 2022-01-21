@@ -1,4 +1,4 @@
-# TodoList
+# TodoList as a microservice
 TodoList is a simple todo list project, which I developed using spring, and spring cloud as my first microservices architecture project.
 # Docker
 If you want to run more than one instance of each micro service, then you better run them as a docker containers.
